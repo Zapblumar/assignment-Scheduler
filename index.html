@@ -1,38 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Work Day Scheduler</title>
+  <style>
+    [class^=col] {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-2" moment().format (MMMM Do YYYY, h:mm:ss a)>time</div>
     </div>
-
+    <div class="row p-2 m-auto">
+      <div class="col-1">9:00</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">9:15</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">9:30</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">9:45</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">10:00</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">10:15</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">10:30</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">10:45</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">11:00</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">11:15</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">11:30</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">11:45</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">12:00</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">12:15</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">12:30</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">12:45</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">1:00</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">1:15</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">1:30</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">1:45</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">2:00</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">2:15</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">2:30</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">2:45</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">3:00</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">3:15</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">3:30</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">3:45</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">4:00</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">4:15</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">4:30</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">4:45</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
+    <div class="row p-2 m-auto">
+      <div class="col-1">5:00</div>
+      <div class="col-10">text here</div>
+      <div class="col-1">💾</div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
+</body>
+
 </html>
