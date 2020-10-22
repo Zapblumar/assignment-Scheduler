@@ -17,17 +17,22 @@
     }
   </style>
 </head>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
 <body>
   <header class="jumbotron">
     <h1 class="display-3">Work Day Scheduler</h1>
-    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p class="lead">A simple calender app for Scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
+    <script>
+      var currentDay = document.getElementById("currentDay");
+      var today = moment().format('LLLL');
+      currentDay.innerText = today;
+    </script>
   </header>
+
   <div class="container">
-    <div class="row">
-      <div class="col-2" moment().format (MMMM Do YYYY, h:mm:ss a)>time</div>
-    </div>
     <div class="row p-2 m-auto">
       <div class="col-1">9:00</div>
       <div class="col-10">text here</div>
@@ -193,8 +198,6 @@
       <div class="col-10">text here</div>
       <div class="col-1">💾</div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 </body>
 
 </html>
