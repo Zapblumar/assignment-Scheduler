@@ -1,7 +1,6 @@
 
 var currentDay = document.getElementById("currentDay");
-var today = moment().format('LLLL');
-currentDay.innerText = today;
+currentDay.innerText = moment().format('LLLL');
 
 var textbox = document.getElementById("col-10");
 textboxs = document.createElement("input");
@@ -9,25 +8,27 @@ $(textboxs).appendTo($(textbox));
 var i = 0
 
 setInterval(function () {
-    location.reload
-}, (1000 * 60) * 5);
+    currentDay.innerText = moment().format('LLLL');
+}, 1000);
+
 var currentHour = moment().hours()
+
 $(".col-10").each(function () {
 
 
     var blockHour = parseInt($(this).attr("id"))
-    console.log(blockHour)
+
     if (currentHour < blockHour) {
-        $(this).addClass("past")
+        $(this).addClass("future")
     }
     else if (currentHour === blockHour) {
-        $(this).removeClass("past")
+        $(this).removeClass("future")
         $(this).addClass("present")
     }
     else {
-        $(this).removeClass("past")
+        $(this).removeClass("future")
         $(this).removeClass("present")
-        $(this).addClass("future")
+        $(this).addClass("past")
         i = i++
     }
 
@@ -115,105 +116,105 @@ $('#Btn-4').on("click", function () {
 });
 
 $(document).on('click', function () {
-    var response = $(this).attr("1");
+    var response = $(this).attr("13");
 });
-var listed = localStorage.getItem("1")
-$("#1").val(listed)
+var listed = localStorage.getItem("13")
+$("#13").val(listed)
 
 $('#Btn-5').on("click", function () {
 
 
     event.preventDefault();
-    userinput = $('#1')
+    userinput = $('#13')
         .val();
 
     console.log(userinput)
     if (userinput === "") {
         return;
     }
-    localStorage.setItem("1", userinput);
+    localStorage.setItem("13", userinput);
 });
 
 $(document).on('click', function () {
-    var response = $(this).attr("1");
+    var response = $(this).attr("13");
 });
-var listed = localStorage.getItem("2")
-$("#2").val(listed)
+var listed = localStorage.getItem("14")
+$("#14").val(listed)
 
 $('#Btn-6').on("click", function () {
 
 
     event.preventDefault();
-    userinput = $('#2')
+    userinput = $('#14')
         .val();
 
     console.log(userinput)
     if (userinput === "") {
         return;
     }
-    localStorage.setItem("2", userinput);
+    localStorage.setItem("14", userinput);
 });
 
 $(document).on('click', function () {
-    var response = $(this).attr("2");
+    var response = $(this).attr("14");
 });
-var listed = localStorage.getItem("3")
-$("#3").val(listed)
+var listed = localStorage.getItem("15")
+$("#15").val(listed)
 
 $('#Btn-7').on("click", function () {
 
 
     event.preventDefault();
-    userinput = $('#3')
+    userinput = $('#15')
         .val();
 
     console.log(userinput)
     if (userinput === "") {
         return;
     }
-    localStorage.setItem("3", userinput);
+    localStorage.setItem("15", userinput);
 });
 
 $(document).on('click', function () {
-    var response = $(this).attr("3");
+    var response = $(this).attr("15");
 });
-var listed = localStorage.getItem("4")
-$("#4").val(listed)
+var listed = localStorage.getItem("16")
+$("#16").val(listed)
 
 $('#Btn-8').on("click", function () {
 
 
     event.preventDefault();
-    userinput = $('#4')
+    userinput = $('#16')
         .val();
 
     console.log(userinput)
     if (userinput === "") {
         return;
     }
-    localStorage.setItem("4", userinput);
+    localStorage.setItem("16", userinput);
 });
 
 $(document).on('click', function () {
-    var response = $(this).attr("4");
+    var response = $(this).attr("16");
 });
-var listed = localStorage.getItem("5")
-$("#5").val(listed)
+var listed = localStorage.getItem("17")
+$("#17").val(listed)
 
 $('#Btn-9').on("click", function () {
 
 
     event.preventDefault();
-    userinput = $('#5')
+    userinput = $('#17')
         .val();
 
     console.log(userinput)
     if (userinput === "") {
         return;
     }
-    localStorage.setItem("5", userinput);
+    localStorage.setItem("17", userinput);
 });
 
 $(document).on('click', function () {
-    var response = $(this).attr("5");
+    var response = $(this).attr("17");
 });
