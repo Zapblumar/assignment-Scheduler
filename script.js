@@ -1,9 +1,9 @@
 
-var currentDay = document.getElementById("currentDay");
+var currentDay = $("#currentDay");
 currentDay.innerText = moment().format('LLLL');
 
-var textbox = document.getElementById("col-10");
-textboxs = document.createElement("input");
+var textbox = $("#col-10");
+textboxs = $("#input");
 $(textboxs).appendTo($(textbox));
 var i = 0
 
